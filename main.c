@@ -19,7 +19,7 @@ int main() {
 	srand(time(NULL));
 	list_t l;
 	list_init(&l);
-	list_push_from_file(&l, "temp.txt");
+	list_push_from_file(&l, "bible.txt");
 	char start_key, sentence[128];
 	char *example = list_pop_at_index(&l, rand() % l.size);
 	time_t start, end;
